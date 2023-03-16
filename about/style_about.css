@@ -66,13 +66,13 @@ header{
     justify-content: center;
 }
 .about__website__image{
-    aspect-ratio: 3/2;
-    width: 25%;
+    aspect-ratio: 3 / 2;
+    width: 30%;
     border: #32cf32 solid 5px;
     border-radius: 5px;
 }
 .about__website__article{
-    max-width: 30%;
+    max-width: 40%;
     background-color: #FFFFFF;
     border: #32cf32 solid 5px;
     border-radius: 5px;
