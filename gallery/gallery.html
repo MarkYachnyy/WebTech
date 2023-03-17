@@ -11,7 +11,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="fade"></div>
+    <div class="zoom__overlay">
+        <button class="zoom__overlay__close__btn"><img src="https://cdn-icons-png.flaticon.com/512/660/660252.png" class="zoom__overlay__close__btn__img"></button>
+        <img class="zoomed__image" src="https://riavrn.ru/i/7f/7fa21cc719560d52da0e901b7c2505ee.jpg">
+        <div></div>
+    </div>
     <header>
         <div class="logo">
             <a href="../main/index.html" class="logo__upper">
@@ -30,6 +34,10 @@
         </nav>
     </header>
     <main>
+        <div class="search__bar">
+            <img class="search__bar__image" src="https://cdn-icons-png.flaticon.com/512/151/151773.png">
+            <input class="search__bar__input" placeholder="ПОИСК ПО ГАЛЕРЕЕ">
+        </div>
         <div class="content">
             <div class="photo__section">
                 <img class="photo__section__image" src="https://riavrn.ru/i/7f/7fa21cc719560d52da0e901b7c2505ee.jpg">
@@ -122,5 +130,6 @@
     <footer>
         <p class="copyright">© COPYRIGHT 2023</p>
     </footer>
+    <script src="script_gallery.js"></script>
 </body>
 </html>
