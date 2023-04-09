@@ -19,3 +19,8 @@ window.addEventListener('resize', function(){
         element.style.height = window.innerHeight * 0.3 + 'px';
     })
 }, true);
+
+Enter_Link = document.querySelector(".enter__link");
+Enter_Link.addEventListener("click", () => {
+    
+})

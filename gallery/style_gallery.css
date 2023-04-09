@@ -156,3 +156,13 @@ header{
   
   color: #000000;
 }
+
+
+.enter__overlay{
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  position: fixed;
+  background-color: rgba(0,0,0,0.5);
+}
