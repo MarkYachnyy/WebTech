@@ -1,27 +1,3 @@
-Gallery_Images = [].slice.call(document.querySelectorAll(".photo__section__image"));
-Overlay = document.querySelector(".zoom__overlay");
-Close_Button = document.querySelector(".zoom__overlay__close__btn");
-
-Gallery_Images.forEach((element) => {
-    element.style.height = window.innerHeight * 0.3 + 'px';
-    element.addEventListener("click",() => {
-        document.querySelector(".zoomed__image").src = element.src;
-        Overlay.style.display = 'flex';
-    })
-})
-
-Close_Button.addEventListener("click", () => {
-    Overlay.style.display = 'none';
-})
-
-window.addEventListener('resize', function(){
-    Gallery_Images.forEach((element) => {
-        element.style.height = window.innerHeight * 0.3 + 'px';
-    })
-}, true);
-
-
-
 function getCookie(cookieName) {
     let cookie = {};
     document.cookie.split(';').forEach(function(el) {
@@ -39,11 +15,11 @@ function checkEnter(){
         document.querySelector('.enter__overlay__logged').style.display = 'flex';
         document.querySelector('.enter__overlay__ok__button').addEventListener('click', () => {
             Enter_Overlay.style.display = 'none';
-        });
+        })
         document.querySelector('.enter__overlay__unlog__button').addEventListener('click', () => {
             document.cookie = "login=hahaha;path=/;expires=Thu, 01 Jan 1970 00:00:01 GMT";
             location.reload();
-        });
+        })
         document.querySelector('.enter__overlay__username__span').textContent = getCookie('login');
     }
 }
@@ -68,4 +44,3 @@ Enter_Btn.addEventListener("click", () => {
 })
 
 checkEnter();
-

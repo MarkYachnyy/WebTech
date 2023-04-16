@@ -35,11 +35,14 @@ header{
 .logo__upper__span{
     color: #00e600;
 }
+.top__right__navigation__bar{
+    display: flex;
+}
 .nav__link{
     height: 100%;
     font-style: normal;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 30px;
     line-height: 36px;
     text-align: center;
     text-transform: uppercase;
@@ -143,3 +146,63 @@ header{
     
     color: #000000;
 }
+
+.enter__link__image{
+    height: 25px;
+    width: 25px;
+  }
+  .enter__overlay{
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    position: fixed;
+    background-color: rgba(0,0,0,0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+  }
+  .enter__overlay__header{
+    font-size: 50px;
+  }
+  .enter__overlay__content{
+    padding: 30px;
+    border: #00e600 solid 10px;
+    border-radius: 15px;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .enter__login__input, .enter__password__input{
+    width: 300px;
+    font-size: 30px;
+    margin: 10px 0;
+    padding: 10px;
+  }
+  .enter__login__input::-webkit-input-placeholder, .enter__password__input::-webkit-input-placeholder{
+    font-family: 'Oswald', sans-serif;
+  }
+  .enter__overlay__btn__enter, .enter__overlay__btn__cancel, .enter__overlay__unlog__button, .enter__overlay__ok__button{
+    font-size: 30px;
+    padding: 5px;
+    font-family: 'Oswald', sans-serif;
+    margin: 0 5px;
+    border:#000000 solid 5px;
+    border-radius: 10px;
+  }
+  .enter__overlay__btn__enter:hover, .enter__overlay__ok__button:hover{
+    border-color: #00e600;
+    cursor: pointer;
+  }
+  .enter__overlay__btn__cancel:hover, .enter__overlay__unlog__button:hover{
+    border-color: #FF0000;
+    cursor: pointer;
+  }
+  
+  .enter__overlay__logged{
+    display: none;
+  }
+  .enter__overlay__username__span{
+    color:#00e600;
+  }

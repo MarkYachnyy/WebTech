@@ -12,14 +12,25 @@
 </head>
 <body>
     <div class="zoom__overlay">
-        <button class="zoom__overlay__close__btn"><img src="https://cdn-icons-png.flaticon.com/512/660/660252.png" class="zoom__overlay__close__btn__img"></button>
+        <button class="zoom__overlay__close__btn"><img src="icons/icon_close.png" class="zoom__overlay__close__btn__img"></button>
         <img class="zoomed__image" src="https://riavrn.ru/i/7f/7fa21cc719560d52da0e901b7c2505ee.jpg">
     </div>
     <div class="enter__overlay">
-        <div class="enter__overlay__content">
+        <div class="enter__overlay__content enter__overlay__unlogged">
             <h1 class="enter__overlay__header">Войти на сайт</h1>
-            <input class="enter__login__input">
-            <input class="enter__password__input">
+            <input class="enter__login__input" placeholder="Логин">
+            <input class="enter__password__input" placeholder="Пароль" type="password">
+            <div class="enter__overlay__buttons">
+                <button class="enter__overlay__btn__cancel">Отмена</button>
+                <button class="enter__overlay__btn__enter">Войти</button>
+            </div>
+        </div>
+        <div class="enter__overlay__content enter__overlay__logged">
+            <h1 class="enter__overlay__header">Выполнен вход на сайт под логином <span class="enter__overlay__username__span"></span></h1>
+            <div class="enter__overlay__buttons">
+                <button class="enter__overlay__ok__button">OK</button>
+                <button class="enter__overlay__unlog__button">Выйти</button>
+            </div>
         </div>
     </div>
     <header>
@@ -36,12 +47,16 @@
             <a class="nav__link" href="../gallery/gallery.html">Галерея</a>
             <a class="nav__link" href="#">Блог</a>
             <a class="nav__link" href="../about/about.html">О сайте</a>
-            <a class="nav__link enter__link" href="#">Войти</a>
+            <div>
+                <a class="nav__link enter__link" href="#">Войти</a>
+                <img class="enter__link__image" src="../icon_unlogged.png">
+            </div>
+            
         </nav>
     </header>
     <main>
         <div class="search__bar">
-            <img class="search__bar__image" src="https://cdn-icons-png.flaticon.com/512/151/151773.png">
+            <img class="search__bar__image" src="icons/icon_search.png">
             <input class="search__bar__input" placeholder="ПОИСК ПО ГАЛЕРЕЕ">
         </div>
         <div class="content">
@@ -49,19 +64,19 @@
                 <img class="photo__section__image" src="https://riavrn.ru/i/7f/7fa21cc719560d52da0e901b7c2505ee.jpg">
                 <ul class="photo__info">
                     <li class="photo__info__line">
-                        <img class="photo__info__icon" src="https://cdn.onlinewebfonts.com/svg/download_415637.png">
+                        <img class="photo__info__icon" src="icons/icon_user.png">
                         <p>Mark_Iachnyi</p>
                     </li>
                     <li class="photo__info__line">
-                        <img class="photo__info__icon" src="https://cdn-icons-png.flaticon.com/512/69/69544.png">
+                        <img class="photo__info__icon" src="icons/icon_info.png">
                         <p>Новый маршрут 44</p>
                     </li>
                     <li class="photo__info__line">
-                        <img class="photo__info__icon" src="https://cdn.onlinewebfonts.com/svg/download_256924.png">
+                        <img class="photo__info__icon" src="icons/icon_time.png">
                         <p>16.03.2023</p>
                     </li>
                     <li class="photo__info__line">
-                        <img class="photo__info__icon" src="https://freepngimg.com/thumb/map/66981-map-google-pin-places-maps-maker.png">
+                        <img class="photo__info__icon" src="icons/icon_location.png">
                         <p>Воронеж</p>
                     </li>
                 </ul>
@@ -70,40 +85,40 @@
                 <img class="photo__section__image" src="https://upload.wikimedia.org/wikipedia/commons/8/85/%D0%9B%D0%B8%D0%90%D0%97-5292.67_%D0%BD%D0%B0_%D0%BC%D0%B0%D1%80%D1%88%D1%80%D1%83%D1%82%D0%B5_%E2%84%9641%2C_%D0%BF%D1%80%D0%BE%D1%81%D0%BF%D0%B5%D0%BA%D1%82_%D0%A0%D0%B5%D0%B2%D0%BE%D0%BB%D1%8E%D1%86%D0%B8%D0%B8.jpg">
                 <ul class="photo__info">
                     <li class="photo__info__line">
-                        <img class="photo__info__icon" src="https://cdn.onlinewebfonts.com/svg/download_415637.png">
+                        <img class="photo__info__icon" src="icons/icon_user.png">
                         <p>Mark_Iachnyi</p>
                     </li>
                     <li class="photo__info__line">
-                        <img class="photo__info__icon" src="https://cdn-icons-png.flaticon.com/512/69/69544.png">
+                        <img class="photo__info__icon" src="icons/icon_info.png">
                         <p>Маршрут 41</p>
                     </li>
                     <li class="photo__info__line">
-                        <img class="photo__info__icon" src="https://cdn.onlinewebfonts.com/svg/download_256924.png">
+                        <img class="photo__info__icon" src="icons/icon_time.png">
                         <p>16.03.2023</p>
                     </li>
                     <li class="photo__info__line">
-                        <img class="photo__info__icon" src="https://freepngimg.com/thumb/map/66981-map-google-pin-places-maps-maker.png">
+                        <img class="photo__info__icon" src="icons/icon_location.png">
                         <p>Воронеж</p>
                     </li>
                 </ul>
             </div>
             <div class="photo__section">
-                <img class="photo__section__image" src="">
+                <img class="photo__section__image" src="https://moe-online.ru/media_new/1/7/3/2/3/0/3/material_1089948/original_photo-thumb_1920.jpg">
                 <ul class="photo__info">
                     <li class="photo__info__line">
-                        <img class="photo__info__icon" src="https://cdn.onlinewebfonts.com/svg/download_415637.png">
+                        <img class="photo__info__icon" src="icons/icon_user.png">
                         <p>Mark_Iachnyi</p>
                     </li>
                     <li class="photo__info__line">
-                        <img class="photo__info__icon" src="https://cdn-icons-png.flaticon.com/512/69/69544.png">
-                        <p>Новая партия приехала)</p>
+                        <img class="photo__info__icon" src="icons/icon_info.png">
+                        <p>Новая партия приехала</p>
                     </li>
                     <li class="photo__info__line">
-                        <img class="photo__info__icon" src="https://cdn.onlinewebfonts.com/svg/download_256924.png">
+                        <img class="photo__info__icon" src="icons/icon_time.png">
                         <p>16.03.2023</p>
                     </li>
                     <li class="photo__info__line">
-                        <img class="photo__info__icon" src="https://freepngimg.com/thumb/map/66981-map-google-pin-places-maps-maker.png">
+                        <img class="photo__info__icon" src="icons/icon_location.png">
                         <p>Воронеж</p>
                     </li>
                 </ul>
@@ -113,19 +128,19 @@
                 <ul class="photo__info">
                     <ul class="photo__info">
                         <li class="photo__info__line">
-                            <img class="photo__info__icon" src="https://cdn.onlinewebfonts.com/svg/download_415637.png">
+                            <img class="photo__info__icon" src="icons/icon_user.png">
                             <p>Mark_Iachnyi</p>
                         </li>
                         <li class="photo__info__line">
-                            <img class="photo__info__icon" src="https://cdn-icons-png.flaticon.com/512/69/69544.png">
+                            <img class="photo__info__icon" src="icons/icon_info.png">
                             <p>Маршрут 5а</p>
                         </li>
                         <li class="photo__info__line">
-                            <img class="photo__info__icon" src="https://cdn.onlinewebfonts.com/svg/download_256924.png">
+                            <img class="photo__info__icon" src="icons/icon_time.png">
                             <p>16.03.2023</p>
                         </li>
                         <li class="photo__info__line">
-                            <img class="photo__info__icon" src="https://freepngimg.com/thumb/map/66981-map-google-pin-places-maps-maker.png">
+                            <img class="photo__info__icon" src="icons/icon_location.png">
                             <p>Воронеж</p>
                         </li>
                     </ul>

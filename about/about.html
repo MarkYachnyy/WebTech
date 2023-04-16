@@ -11,6 +11,24 @@
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="enter__overlay">
+        <div class="enter__overlay__content enter__overlay__unlogged">
+            <h1 class="enter__overlay__header">Войти на сайт</h1>
+            <input class="enter__login__input" placeholder="Логин">
+            <input class="enter__password__input" placeholder="Пароль" type="password">
+            <div class="enter__overlay__buttons">
+                <button class="enter__overlay__btn__cancel">Отмена</button>
+                <button class="enter__overlay__btn__enter">Войти</button>
+            </div>
+        </div>
+        <div class="enter__overlay__content enter__overlay__logged">
+            <h1 class="enter__overlay__header">Выполнен вход на сайт под логином <span class="enter__overlay__username__span"></span></h1>
+            <div class="enter__overlay__buttons">
+                <button class="enter__overlay__ok__button">OK</button>
+                <button class="enter__overlay__unlog__button">Выйти</button>
+            </div>
+        </div>
+    </div>
     <header>
         <div class="logo">
             <a href="../main/index.html" class="logo__upper">
@@ -25,7 +43,10 @@
             <a class="nav__link" href="../gallery/gallery.html">Галерея</a>
             <a class="nav__link" href="#">Блог</a>
             <a class="nav__link" href="../about/about.html">О сайте</a>
-            <a class="nav__link enter__link" href="#">Войти</a>
+            <div>
+                <a class="nav__link enter__link" href="#">Войти</a>
+                <img class="enter__link__image" src="../icon_unlogged.png">
+            </div>
         </nav>
     </header>
     <main>
@@ -60,5 +81,6 @@
     <footer>
         <p class="copyright">© COPYRIGHT 2023</p>
     </footer>
+    <script src="script_about.js"></script>
 </body>
 </html>
