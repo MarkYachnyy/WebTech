@@ -68,4 +68,3 @@ Enter_Btn.addEventListener("click", () => {
 })
 
 checkEnter();
-
