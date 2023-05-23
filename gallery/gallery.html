@@ -55,32 +55,39 @@
         </nav>
     </header>
     <main>
-        <div class="search__bar">
-            <img class="search__bar__image" src="icons/icon_search.png">
-            <input class="search__bar__input" placeholder="ПОИСК ПО ГАЛЕРЕЕ">
+        <div class="gallery__header__container">
+            <h1 class="gallery__header">ГАЛЕРЕЯ</h1>
         </div>
-        <div class="content">
-            <div class="photo__section">
-                <img class="photo__section__image" src="https://riavrn.ru/i/7f/7fa21cc719560d52da0e901b7c2505ee.jpg">
+        <div class="add__image__div">
+            <p class="add__image__div__header">Добавить<br>изображение:</p>
+            <div class="add__photo__section">
+                <textarea class = "add__photo__section__url__input" placeholder="Ссылка на изображение"></textarea>
                 <ul class="photo__info">
                     <li class="photo__info__line">
                         <img class="photo__info__icon" src="icons/icon_user.png">
-                        <p>Mark_Iachnyi</p>
+                        <input class="add__photo__section__input add__photo__user__input"placeholder="Пользователь">
                     </li>
                     <li class="photo__info__line">
                         <img class="photo__info__icon" src="icons/icon_info.png">
-                        <p>Новый маршрут 44</p>
+                        <input class="add__photo__section__input add__photo__title__input" placeholder="Название">
                     </li>
                     <li class="photo__info__line">
                         <img class="photo__info__icon" src="icons/icon_time.png">
-                        <p>16.03.2023</p>
+                        <input class="add__photo__section__input add__photo__date__input" type="date" placeholder="Дата">
                     </li>
                     <li class="photo__info__line">
                         <img class="photo__info__icon" src="icons/icon_location.png">
-                        <p>Воронеж</p>
+                        <input class="add__photo__section__input add__photo__location__input" placeholder="Место">
+                    </li>
+                    <li>
+                        <button class="add__photo__section__confirm__btn">Добавить</button>
                     </li>
                 </ul>
             </div>
+        </div>
+        <div class="border__line"></div>
+        <div class="content">
+            
         </div>
     </main>
     <footer>

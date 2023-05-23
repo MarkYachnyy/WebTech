@@ -80,29 +80,14 @@ header{
 .nav__link:hover{
   color: #00e600;
 }
-.search__bar{
+.gallery__header__container{
   background-color: #e3e8e6;
-  padding: 20px;
   display: flex;
   justify-content: center;
+  padding: 20px;
 }
-.search__bar__input{
-  width: 50%;
-  height: 50px;
-  padding: 0px 20px;
-  border: #000000 5px solid;
-  border-radius: 20px;
-  font-family: 'Oswald', sans-serif;
-  font-size: 20px;
-  text-align: center;
-}
-.search__bar__input::-webkit-input-placeholder{
-  color: #999999;
-}
-.search__bar__image{
-  height: 50px;
-  aspect-ratio: 1;
-  margin-right: 20px;
+.gallery__header{
+  font-size: 50px;
 }
 .content{
   background-color: #e3e8e6;
@@ -110,7 +95,7 @@ header{
   display: flex;
   flex-wrap: wrap;
 }
-.photo__section{
+.photo__section, .add__photo__section{
   margin: 10px 10px;
   padding: 20px;
   border: #000000 solid 6px;
@@ -129,7 +114,7 @@ header{
 }
 .photo__info{
   list-style-type: none;
-  height: 100%;
+  height: 300px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -218,4 +203,68 @@ header{
 }
 .enter__overlay__username__span{
   color:#00e600;
+}
+.add__photo__section__input::-webkit-input-placeholder, .add__photo__section__url__input::-webkit-input-placeholder{
+  font-family: 'Oswald', sans-serif;
+  font-size: 20px;
+  text-align: center;
+}
+.add__photo__section__url__input{
+  font-size: 20px;
+  height: 300px;
+  width: 500px;
+  line-break: anywhere;
+  resize: none;
+  margin-right: 25px;
+  font-size: 20px;
+}
+.add__photo__section__input, .add__photo__section__url__input{
+  text-align: center;
+}
+.add__photo__section__input, .photo__section__input{
+  height: min-content;
+  font-size: 20px;
+  width: 175px;
+  padding: 3px;
+}
+.photo__section__input{
+  border: none;
+  text-align: left;
+}
+.add__photo__section__confirm__btn, .photo__section__button{
+  font-family: 'Oswald', sans-serif;
+  font-size: 20px;
+  padding: 5px;
+  border: 3px black solid;
+  border-radius: 3px;
+}
+.photo__section__edit__button:hover{
+  border-color: orange;
+  cursor: pointer;
+}
+.photo__section__delete__button:hover{
+  border-color: #FF0000;
+  cursor: pointer;
+}
+.photo__section__button__div{
+  display: flex;
+  justify-content: space-around;
+}
+.add__photo__section__confirm__btn:hover{
+  cursor: pointer;
+  border-color: #00e600;
+}
+.add__image__div{
+  background-color: #e3e8e6;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+}
+.add__image__div__header{
+  font-size: 40px;
+}
+.border__line{
+  width: 100%;
+  height: 20px;
+  background-color: #c3c8c6;
 }
